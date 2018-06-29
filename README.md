@@ -1,5 +1,7 @@
 # angular-monoquery
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/brysgo/angular-monoquery.svg)](https://greenkeeper.io/)
+
 This project is meant to provide a more seamless experience for using [monoquery](https://github.com/brysgo/monoquery) with an Angular project.
 
 As it stands, this project provides two decorators:
