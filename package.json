@@ -33,7 +33,7 @@
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.5.3",
     "typescript": "^2.9.2",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.29"
   },
   "peerDependencies": {
     "graphql-path": "*",
