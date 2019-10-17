@@ -23,7 +23,7 @@
     "@angular/platform-browser": "^6.0.7",
     "@angular/platform-browser-dynamic": "^6.0.7",
     "@types/jest": "^24.0.0",
-    "apollo-angular": "^1.0.1",
+    "apollo-angular": "^1.8.0",
     "apollo-angular-link-http": "^1.0.3",
     "graphql-path": "^3.1.4",
     "jest": "^23.2.0",
