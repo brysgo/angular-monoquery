@@ -27,7 +27,7 @@
     "apollo-angular-link-http": "^1.0.3",
     "graphql-path": "^3.1.4",
     "jest": "^23.2.0",
-    "jest-preset-angular": "^5.2.2",
+    "jest-preset-angular": "^8.1.3",
     "monoquery": "^1.3.1",
     "ng-packagr": "^5.1.0",
     "rxjs": "^6.0.0",
