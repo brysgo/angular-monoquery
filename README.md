@@ -1,7 +1,6 @@
 # angular-monoquery
 
-[![CircleCI](https://circleci.com/gh/brysgo/angular-monoquery.svg?style=shield)](https://circleci.com/gh/brysgo/angular-monoquery)
-[![Greenkeeper badge](https://badges.greenkeeper.io/brysgo/angular-monoquery.svg)](https://greenkeeper.io/)
+![CI](https://github.com/brysgo/angular-monoquery/workflows/CI/badge.svg)
 
 This project is meant to provide a more seamless experience for using [monoquery](https://github.com/brysgo/monoquery) with an Angular project.
 
