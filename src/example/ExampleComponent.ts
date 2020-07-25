@@ -4,7 +4,7 @@ import { Fragments } from "../";
 
 import gql from "graphql-tag";
 
-export const createExampleComponent = (MonoProvider, otherFragments = {}) => {
+export function createExampleComponent(MonoProvider, otherFragments = {}) {
   @Fragments({
     fragments: {
       simpleFragment: gql`
@@ -12,22 +12,24 @@ export const createExampleComponent = (MonoProvider, otherFragments = {}) => {
           hello
         }
       `,
-      ...otherFragments
-    }
+      ...otherFragments,
+    },
   })
   @Component({
     selector: "example-component",
-    template: "{{jsonData | async}}"
+    template: "{{jsonData | async}}",
   })
   class ExampleComponent {
     static fragments: any;
+    monoProvider: any;
     jsonData: string;
+    data: any;
     constructor(
       @Inject(forwardRef(() => MonoProvider))
-      monoProvider: MonoProvider
+      monoProvider: typeof MonoProvider
     ) {
       this.monoProvider = monoProvider;
-      this.jsonData = this.data.pipe(map(d => JSON.stringify(d)));
+      this.jsonData = this.data.pipe(map((d) => JSON.stringify(d)));
     }
 
     getKeyProp() {
@@ -35,4 +37,4 @@ export const createExampleComponent = (MonoProvider, otherFragments = {}) => {
     }
   }
   return ExampleComponent;
-};
+}
